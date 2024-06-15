@@ -1,3 +1,14 @@
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 1000
+
+.dm-sans-<uniquifier> {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+@media screen and (min-width:335px){
 .modal-content{
     position: relative;
   }
@@ -9,23 +20,187 @@
 }
 .modal-close-btn{
 position: relative;
-left:90%;
-align-items: center;
-justify-content: center;
-background-color: #FFFFFF;
-border: none;
+left:94%;
+top:20%;
 color:#AE1332;
-font-size: 24px;
-width: 30px;
-height: 24px;
 }
   .your-order{
     position: relative;
-    left:3%;
-    top:%;
+    left:1%;
+    bottom: 40%;
     font-weight: 500;
     font-size: 28px;
     line-height: 28px;
     letter-spacing: -4%;
     color:#AE1332
   }
+  .modal-content{
+display: flex;
+background-color: #F8766B;
+width: 295px;
+height:119px;
+border-radius: 20px;
+margin-left: 9%;
+gap:12px;
+  }
+  .modal-input{
+    position: relative;
+    left:180%;
+   top:9%
+  }
+  .strawberry-title{
+    font-family: "DM Sans" sans-serif;
+    position: relative;
+    bottom: 20%;
+    left:13%;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: -4%;
+    color:#FFFF;
+  }
+  .p-modal{
+    font-family: "DM Sans" sans-serif;
+    position: relative;
+    bottom:40%;
+    left:13%;
+    color: #FFFF;
+  }
+ .photo-strawberry{
+    position: relative;
+    left:122%;
+    bottom:96%;
+ }
+ .modal-content-dos{
+    display: flex;
+    background-color:#EDD251;
+    margin-top: 12px;
+    width: 295px;
+    height:119px;
+    border-radius: 20px;
+    margin-left: 9%;
+    gap:12px
+ }
+ .modal-input-dos{
+    position: relative;
+    left:252%;
+   top:9%
+ }
+ .apple-title{
+    font-family: "DM Sans" sans-serif;
+    position: relative;
+    bottom: 20%;
+    left:13%;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: -4%;
+    color:#FFFF;
+ }
+ .p-modal-dos{
+    font-family: "DM Sans" sans-serif;
+    position: relative;
+    bottom:39%;
+    left:13%;
+    color: #FFFF;
+ }
+.photo-apples{
+    position: relative;
+    left:150%;
+    bottom:96%;
+}
+ .modal-content-tres{
+    display: flex;
+    background-color:#9DC262;
+    margin-top: 12px;
+    width: 295px;
+    height:119px;
+    border-radius: 20px;
+    margin-left: 9%;
+    gap:12px
+ }
+ .modal-input-tres{
+    position: relative;
+    left:252%;
+   top:9%
+ }
+ .fruits-title{
+    font-family: "DM Sans" sans-serif;
+    position: relative;
+    bottom: 20%;
+    left:13%;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: -4%;
+    color:#FFFF;
+ }
+ .p-modal-tres{
+    font-family: "DM Sans" sans-serif;
+    position: relative;
+    bottom:39%;
+    left:13%;
+    color: #FFFF;
+ }
+ .photo-fruits{
+    position: relative;
+    left:150%;
+    bottom:96%;
+ }
+ .label-modal{
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    margin-left: 30px;
+    gap:14px;
+ }
+ .name{
+    width: 295px;
+    height: 43px;
+border-radius: 100px;
+
+ }
+ .email{
+    width: 295px;
+    height: 43px;
+border-radius: 100px;
+ 
+ }
+ .card{
+    width: 295px;
+    height: 43px;
+border-radius: 100px;
+
+ }
+ .comment{
+    width: 295px;
+    height: 43px;
+border-radius: 20px;
+
+ }
+ .btnsubmit{
+    display: flex;
+    margin-left:20px;
+    margin-top: 10px;
+    width:92px;
+    height:42px;
+    border-radius: 100px;
+    gap:15px;
+background-color: #9DC162;
+border: none;
+ }
+ .submit-modal{
+    font-family: "DM Sans" sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 5%;
+    text-decoration: none;
+    color: #FFFF;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: -4%;
+ }
+}
