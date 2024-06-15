@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Order Modal</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<div class="modal">
+<div class="modal-btn-title">
+<button class="modal-close-btn">X</button>
+ <h2 class="your-order">YOUR ORDER</h2>
+</div>
+</div>
+<div class="modal-content">
+    <label>
+        <input class="modal-input" type="checkbox" name="fruits" value="strawberry">
+        <h4 class="strawberry-title">Strawberry Basket</h4>
+        <p>Plant</p>
+        <img srcset="../img/koszyk-z-truskawkami.png 1x,
+        ../img/koszyk-z-truskawkami.png 2x" src="../img/koszyk-z-truskawkami.png" alt="strawberries" width="88px" height="95px">
+    </label>
+    <label>
+        <input class="modal-input" type="checkbox" name="fruits" value="apples">
+        <h4 class="apple-title">Apple Basket</h4>
+        <p>Plant</p>
+        <img srcset="../img/skrzynka.png 1x,
+        ../img/skrzynka.png 2x" src="../img/skrzynka.png" alt="apples" width="88px" height="95px">
+    </label>
+    <label>
+        <input class="modal-input" type="checkbox" name="fruits" value="fruits">
+        <h4 class="fruits-title">Fruits Basket</h4>
+        <p>Plant</p>
+        <img srcset="../img/owoce.png 1x,
+        ../img/owoce.png 2x" src="../img/owoce.png" alt="fruits" width="88px" height="95px">
+    </label>
+</div>
+<div class="modal-form">
+    <label>
+        <input type="text" id="name" name="name" placeholder="Enter Full name.." required pattern="[A-Za-z\s]+" title="Name should only contain letters and spaces."/>
+        <input type="text" id="email" name="email" placeholder="Enter email.."  required title="Please enter a valid email address."/>
+        <input type="text" id="card" name="card" placeholder="Enter card.." required pattern="\d{10}" title="Card should contain only numbers."/>
+        <input type="text" id="comment" name="comment" placeholder="Enter comments.." rows="5"/>
+    </label>
+</div>
+<div class="btn-submit">
+    <button class="btnsubmit">Submit</button>
+</div>
