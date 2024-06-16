@@ -10,13 +10,19 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="modal">
+  <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    <symbol id="icon-x-sign" viewBox="0 0 32 32">
+    <path d="M32 3.223l-3.223-3.223-12.777 12.777-12.777-12.777-3.223 3.223 12.777 12.777-12.777 12.777 3.223 3.223 12.777-12.777 12.777 12.777 3.223-3.223-12.777-12.777 12.777-12.777z"></path>
+    </symbol>
+    </defs>
+    </svg>
+<div id="Modal" class="modal">
+   
 <div class="modal-btn-title">
-<button class="modal-close-btn">X</button>
+<button type="button" class="modal-close-btn"><svg width="15px" height="15px"><use a href="../public/YourOrder.svg#icon-x-sign"></use></svg></button>
  <h2 class="your-order">YOUR ORDER</h2>
-</div>
-</div>
-<div class="modal-content">
+<div  class="modal-content">
     <label>
         <input class="modal-input" type="checkbox" name="fruits" value="strawberry">
         <h4 class="strawberry-title">Strawberry Basket</h4>
@@ -40,16 +46,20 @@
         <img class="photo-fruits" srcset="../img/owoce.png 1x,
         ../img/owoce@2.png 2x" src="../img/owoce.png" alt="fruits" width="107px" height="95px">
     </label></div>
-<div class="modal-form">
+<div class="modal-form-uno">
+  <form>
     <label class="label-modal">
         <input class="name" type="text" id="name" name="name" placeholder="Enter Full name.." required pattern="[A-Za-z\s]+" title="Name should only contain letters and spaces."/>
         <input class="email" type="text" id="email" name="email" placeholder="Enter email.."  required title="Please enter a valid email address."/>
         <input class="card" type="text" id="card" name="card" placeholder="Enter card.." required pattern="\d{10}" title="Card should contain only numbers."/>
-        <textarea class="comment" type="text" placeholder="Enter comments.." rows="5"></textarea>
-    </label>
-</div>
+        <input class="comment" type="text" id="comment" name="comment" placeholder="Enter comments.."/>
+      </label></div>
 <div class="btn-submit">
     <button class="btnsubmit"><a class="submit-modal" href="#">Submit</a></button>
+</div>
+</form>
+</div>
+</div>
 </div>
 </body>
 </html>

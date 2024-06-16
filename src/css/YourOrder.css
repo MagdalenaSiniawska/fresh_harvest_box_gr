@@ -8,7 +8,8 @@
   font-style: normal;
 }
 
-@media screen and (min-width:335px){
+@media screen and (min-width:335px)
+{
 .modal-content{
     position: relative;
   }
@@ -18,21 +19,45 @@
     margin: 0 auto;
     padding: 0 15px;
 }
+.modal{
+   position: fixed;
+   top: 0;
+   left: 0; 
+   width: 100%;
+   height: 100%;
+   background-color: #FFFF;
+}
+.modal-btn-title{
+   position: absolute;
+   top: 50%; 
+   left: 50%; 
+   transform: translate(-50%, -50%); 
+   width: 335px; 
+   max-height: 907px;
+   box-shadow:0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);; 
+   background: #FFFF; 
+   border-radius: 20px; 
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   padding: 72px 24px 24px 24px; 
+}
 .modal-close-btn{
-position: relative;
-left:94%;
-top:20%;
-color:#AE1332;
+   position: absolute; 
+    top: 31px; 
+    right: 24px; 
+    background-color: #FFFF;
+    border: none;
 }
   .your-order{
-    position: relative;
-    left:1%;
-    bottom: 40%;
-    font-weight: 500;
+   position: absolute; 
+   top: 2px; 
+   bottom: 30px;
+    color:#AE1332;
+    font-family: "DM Sans" sans-serif;
     font-size: 28px;
+    font-weight: 500;
     line-height: 28px;
     letter-spacing: -4%;
-    color:#AE1332
+    
   }
   .modal-content{
 display: flex;
@@ -40,7 +65,8 @@ background-color: #F8766B;
 width: 295px;
 height:119px;
 border-radius: 20px;
-margin-left: 9%;
+margin-top: 2%;
+margin-left: 5%;
 gap:12px;
   }
   .modal-input{
@@ -78,12 +104,12 @@ gap:12px;
     width: 295px;
     height:119px;
     border-radius: 20px;
-    margin-left: 9%;
+    margin-left: 5%;
     gap:12px
  }
  .modal-input-dos{
     position: relative;
-    left:252%;
+    left:244%;
    top:9%
  }
  .apple-title{
@@ -116,12 +142,12 @@ gap:12px;
     width: 295px;
     height:119px;
     border-radius: 20px;
-    margin-left: 9%;
+    margin-left: 5%;
     gap:12px
  }
  .modal-input-tres{
     position: relative;
-    left:252%;
+    left:244%;
    top:9%
  }
  .fruits-title{
@@ -150,8 +176,8 @@ gap:12px;
  .label-modal{
     display: flex;
     flex-direction: column;
-    margin-top: 45px;
-    margin-left: 30px;
+    margin-top: 30px;
+    margin-left: 13px;
     gap:14px;
  }
  .name{
@@ -176,6 +202,7 @@ border-radius: 100px;
     width: 295px;
     height: 43px;
 border-radius: 20px;
+height: calc(1.5em * 7);
 
  }
  .btnsubmit{
@@ -203,4 +230,5 @@ border: none;
     font-weight: 400;
     letter-spacing: -4%;
  }
+
 }
