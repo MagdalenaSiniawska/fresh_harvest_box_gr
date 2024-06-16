@@ -8,7 +8,7 @@
   font-style: normal;
 }
 
-@media screen and (min-width:335px)
+@media screen and (min-width:375px)
 {
 .modal-content{
     position: relative;
@@ -25,7 +25,8 @@
    left: 0; 
    width: 100%;
    height: 100%;
-   background-color: #FFFF;
+   background-color: rgba(46, 47, 66, 0.4);
+   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .modal-btn-title{
    position: absolute;
@@ -46,6 +47,7 @@
     right: 24px; 
     background-color: #FFFF;
     border: none;
+    cursor: pointer;
 }
   .your-order{
    position: absolute; 
@@ -177,25 +179,28 @@ gap:12px;
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    margin-left: 13px;
+    margin-left: 12px;
     gap:14px;
  }
  .name{
     width: 295px;
     height: 43px;
 border-radius: 100px;
-
+border: 1px solid grey;
  }
+
  .email{
     width: 295px;
     height: 43px;
 border-radius: 100px;
- 
+border: 1px solid grey;
+
  }
  .card{
     width: 295px;
     height: 43px;
 border-radius: 100px;
+border: 1px solid grey;
 
  }
  .comment{
@@ -203,11 +208,13 @@ border-radius: 100px;
     height: 43px;
 border-radius: 20px;
 height: calc(1.5em * 7);
+border: 1px solid grey;
+
 
  }
  .btnsubmit{
     display: flex;
-    margin-left:20px;
+    margin-left:13px;
     margin-top: 10px;
     width:92px;
     height:42px;
@@ -230,5 +237,76 @@ border: none;
     font-weight: 400;
     letter-spacing: -4%;
  }
-
+.women-with-banana{
+   display:none;
+}
+}
+@media  screen and (min-width:768px) {
+   .container {
+      max-width: 1279px;
+  }
+  .modal-btn-title{
+   width: 704px; 
+   max-height: 853px;
+}
+.modal-close-btn{
+   top:20px
+}
+.your-order{
+   top:35px;
+   left: 40px;
+}
+.modal-content{
+   margin-top: 7%;
+   width: 200px;
+   height:250px;
+}
+.strawberry-title{
+   left:13%;
+   top:-1%;
+   font-size:18px
+}
+.p-modal{
+   top:-9%;
+}
+.modal-input{
+   left:115%;
+   top:6%;
+}
+.photo-strawberry{
+   top:-13%;
+   left:20%;
+   width: 133px;
+   height: 148px;
+}
+.modal-content-dos{
+ margin-left: 35%;
+ margin-top: -35.3%;
+   width: 200px;
+   height:250px;
+}
+.apple-title{
+   left:13%;
+   top:-1%;
+   font-size:18px
+}
+.p-modal-dos{
+   top:-9%;
+}
+.modal-input-dos{
+   left:115%;
+   top:6%;
+}
+.photo-apples{
+   top:-13%;
+   left:20%;
+   width: 172px;
+   height: 148px; 
+}
+.modal-content-tres{
+   margin-left: 65%;
+   margin-top: -35.3%;
+   width: 200px;
+   height:250px;
+}
 }
