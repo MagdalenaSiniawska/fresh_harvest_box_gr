@@ -39,7 +39,8 @@
    background: #FFFF; 
    border-radius: 20px; 
    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   padding: 72px 24px 24px 24px; 
+   padding-top: 69px;
+   padding-bottom: 30px;
 }
 .modal-close-btn{
    position: absolute; 
@@ -53,6 +54,7 @@
    position: absolute; 
    top: 2px; 
    bottom: 30px;
+   left:17px;
     color:#AE1332;
     font-family: "DM Sans" sans-serif;
     font-size: 28px;
@@ -247,7 +249,10 @@ border: none;
   }
   .modal-btn-title{
    width: 704px; 
-   max-height: 853px;
+   max-height: 1000px;
+   background-image: url(../img/kobieta-banany.png);
+   background-repeat: no-repeat;
+   background-position:175% 100%;
 }
 .modal-close-btn{
    top:20px
@@ -294,12 +299,12 @@ border: none;
    top:-9%;
 }
 .modal-input-dos{
-   left:115%;
+   left:96%;
    top:6%;
 }
 .photo-apples{
-   top:-13%;
-   left:20%;
+   top:-17%;
+   left:7%;
    width: 172px;
    height: 148px; 
 }
@@ -309,4 +314,47 @@ border: none;
    width: 200px;
    height:250px;
 }
+.modal-input-tres{
+   left:97%;
+   top:6%;
+}
+.photo-fruits{
+   top:-15%;
+   left:7%;
+   width: 172px;
+   height: 148px; 
+}
+.p-modal-tres{
+   top:-9%;
+}
+.fruits-title{
+   left:13%;
+   top:-1%;
+   font-size:18px
+}
+.label-modal{
+margin-left: 35px;
+margin-top:2%;
+width: 360px;
+
+}
+.btnsubmit{
+   margin-top: 20px;
+   margin-left: 33px;
+   background-image: url(../img/kobieta-banany.png);
+   background-repeat: no-repeat;
+   background-position:175% 50%;
+}
+}
+@media  screen and (min-width: 1280px){
+.modal-btn-title{
+   width:891px;
+   height:740px;
+
+}
+.modal-content{
+   width: 257px;
+   height: 308px;
+}
+   
 }
