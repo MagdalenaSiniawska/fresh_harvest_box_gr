@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-  <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <svg aria-hidden="true"  style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
     <symbol id="icon-x-sign" viewBox="0 0 32 32">
     <path d="M32 3.223l-3.223-3.223-12.777 12.777-12.777-12.777-3.223 3.223 12.777 12.777-12.777 12.777 3.223 3.223 12.777-12.777 12.777 12.777 3.223-3.223-12.777-12.777 12.777-12.777z"></path>
@@ -19,7 +19,7 @@
     </svg>
 <div id="Modal" class="modal"> 
 <div class="modal-btn-title">
-<button type="button" id="close-btn" class="modal-close-btn">X</button>
+<button type="button" id="close-btn" class="modal-close-btn"><a class="close-button"><svg width="20" height="20"><use a href="../public/YourOrder.svg#icon-x-sign"></use></svg></a></button>
  <h2 class="your-order">YOUR ORDER</h2>
 <div  class="modal-content">
     <label>
@@ -51,7 +51,8 @@
         <input class="name" type="text" id="name" name="name" placeholder="Enter Full name.." required pattern="[A-Za-z\s]+" title="Name should only contain letters and spaces."/>
         <input class="email" type="text" id="email" name="email" placeholder="Enter email.."  required title="Please enter a valid email address."/>
         <input class="card" type="text" id="card" name="card" placeholder="Enter card.." required pattern="\d{10}" title="Card should contain only numbers."/>
-        <input class="comment" type="text" id="comment" name="comment" placeholder="Enter comments.."/>
+        <label class="comment-text">Enter comment..</label>
+        <input class="comment" type="text" id="comment" name="comment"/>
       </label>
 <div class="btn-submit">
     <button class="btnsubmit"><a class="submit-modal" href="#">Submit</a></button>

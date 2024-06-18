@@ -44,11 +44,12 @@
 }
 .modal-close-btn{
    position: absolute; 
-    top: 31px; 
+    top: 28px; 
     right: 24px; 
     background-color: #FFFF;
     border: none;
     cursor: pointer;
+    color:#AE1332
 }
   .your-order{
    position: absolute; 
@@ -62,6 +63,16 @@
     line-height: 28px;
     letter-spacing: -4%;
     
+  }
+  .comment-text{
+   position: absolute;
+   top:74%;
+   left:7%;
+   font-size: 14px;
+   font-family: "DM Sans" sans-serif;
+   font-weight: 400;
+   color: #000000;
+   opacity: 50%;
   }
   .modal-content{
 display: flex;
@@ -185,34 +196,34 @@ gap:12px;
     gap:14px;
  }
  .name{
-    width: 295px;
+    width: 277px;
     height: 43px;
 border-radius: 100px;
 border: 1px solid grey;
+margin-right: 50px;
+padding-left: 20px;
  }
-
  .email{
-    width: 295px;
+   width: 277px;
     height: 43px;
 border-radius: 100px;
 border: 1px solid grey;
-
+padding-left: 20px;
  }
  .card{
-    width: 295px;
+   width: 277px;
     height: 43px;
 border-radius: 100px;
 border: 1px solid grey;
-
+padding-left: 20px;
  }
  .comment{
-    width: 295px;
+   width: 277px;
     height: 43px;
 border-radius: 20px;
 height: calc(1.5em * 7);
 border: 1px solid grey;
-
-
+padding-left: 20px;
  }
  .btnsubmit{
     display: flex;
@@ -335,26 +346,125 @@ border: none;
 .label-modal{
 margin-left: 35px;
 margin-top:2%;
-width: 360px;
+width: 230px;
 
+}
+.name{
+   width: 280px;
+}
+.name:placeholder-shown{
+   padding-left: 20px;
+}
+.card{
+   width: 280px;
+}
+.card:placeholder-shown{
+   padding-left: 20px;
+}
+.email{
+   width:280px;
+}
+.email:placeholder-shown{
+   padding-left: 20px;
+}
+.comment{
+   width:280px;
+}
+.comment:placeholder-shown{
+   padding-left: 20px;
+   
 }
 .btnsubmit{
    margin-top: 20px;
    margin-left: 33px;
-   background-image: url(../img/kobieta-banany.png);
-   background-repeat: no-repeat;
-   background-position:175% 50%;
 }
 }
 @media  screen and (min-width: 1280px){
 .modal-btn-title{
    width:891px;
    height:740px;
-
+padding-bottom: 60px;
+background-position:100% 100%;
+}
+.container{
+   min-width: 1280px; 
 }
 .modal-content{
    width: 257px;
    height: 308px;
+   top:-1%;
 }
-   
+.your-order{
+   font-size: 40px;
+   top:2%
+}
+.close-button{
+ color:#AE1332;
+}
+.strawberry-title{
+   font-size: 24px;
+}
+.p-modal{
+   font-size: 14px;
+}
+.photo-strawberry{
+   width: 173px;
+   height: 196px;
+}
+ .modal-content-dos{
+   position: relative;
+   width: 257px;
+   height: 308px;
+   top:-0.3%;
+   left:0.5%
+ } 
+ .apple-title{
+   font-size: 24px;
+ } 
+ .p-modal-dos{
+   font-size: 14px;
+ }
+ .photo-apples{
+   width: 229px;
+   height: 196px;
+ }
+ .modal-content-tres{
+   position: relative;
+   width: 257px;
+   height: 308px;
+   top: 0.5%;
+   left:1%;
+ }
+ .fruits-title{
+   font-size: 24px;
+ }
+ .p-modal-tres{
+   font-size: 14px;
+ }
+ .photo-fruits{
+   width: 229px;
+   height: 196px;
+ }
+ .label-modal{
+   margin-left:45px ;
+  width:420px;
+ }
+ .name:placeholder-shown{
+   padding-left: 20px;
+ }
+ .card:placeholder-shown{
+   padding-left: 20px;
+ }
+ .email:placeholder-shown{
+   padding-left: 20px;
+ }
+ .comment:placeholder-shown{
+   padding-left: 20px;
+ }
+ .btnsubmit{
+   margin-left: 46px;
+   margin-top: 21px;
+  
+  
+ }
 }
