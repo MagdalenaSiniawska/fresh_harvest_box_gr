@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .modal-TY-container {
   position: fixed;
   top: 0;
@@ -15,6 +23,7 @@
   width: 335px;
   height: 426px;
   background: #e03f5e;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .modal-img {
@@ -47,6 +56,7 @@
   padding-left: 20px;
   padding-right: 20px;
   width: 295px;
+  margin: 0 auto;
 }
 
 .close-button {
@@ -59,13 +69,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
   background: none;
 }
 
-@media (min-width: 768px) {
+.close-button-icon {
+  fill: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
   .modal-box {
     width: 600px;
     height: 545px;
