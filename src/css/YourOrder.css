@@ -66,8 +66,8 @@
   }
   .comment-text{
    position: absolute;
-   top:74%;
-   left:7%;
+   top:77%;
+   left:9%;
    font-size: 14px;
    font-family: "DM Sans" sans-serif;
    font-weight: 400;
@@ -301,6 +301,10 @@ border: none;
    width: 200px;
    height:250px;
 }
+.comment-text{
+   top:73%;
+   left:7.4%
+}
 .apple-title{
    left:13%;
    top:-1%;
@@ -393,6 +397,9 @@ background-position:100% 100%;
    width: 257px;
    height: 308px;
    top:-1%;
+}
+.comment-text{
+   top:74%
 }
 .your-order{
    font-size: 40px;
