@@ -2,7 +2,6 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    
 }
 
 body {
@@ -10,7 +9,6 @@ body {
     background-color: #ffffff;
     margin: 0;
     padding: 0;
-    max-width: 1280px;
 }
 
 .fruits-header {
@@ -44,6 +42,7 @@ body {
     color: white;
     padding-bottom: 20px;
     box-sizing: border-box;
+    max-width: 1280px;
 }
 
 h1 {
