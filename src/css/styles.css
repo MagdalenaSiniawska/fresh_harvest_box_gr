@@ -400,124 +400,91 @@ a {
 
 /* Section ORGANIC FRUIT style */
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.fruit_container {
+  width: 100%;
+  max-width: 380px;
+  background-color: #AE1332;
+  padding-bottom: 20px;
 }
 
-.fruits-header {
+
+
+.organic-fruit-header {
+  text-align: center;
+  padding-bottom: 14px;
+  font-size: 1.5em;
   color: #ffffff;
-  font-size: 40px;
-  font-weight: 500;
-  letter-spacing: 0.04em;
+  font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 28px;
+    letter-spacing: -0.04em;
+    margin: 0 82.5px;
 }
-
-.box {
+.organic-fruit-paragraph {
+  text-align: center;
+  padding-bottom: 44px;
+  color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 18px;
+    letter-spacing: -0.04em;
+    font-size: 0.88em;
+    margin: 0 20.5px;
+}
+.fruit-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding-bottom: 44px;
+  gap: 14px;
+  list-style: none;
 }
 
-.fruits-paragraph {
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  max-width: 624px;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.fruits_container { /*nadpisałam Ci klasę, bo wpływała na inne segmenty*/
-  text-align: center;
-  /* background-color: #AE1332; do wyrzucenia, mamy ograne wyżej */
-  color: white; 
-  padding-bottom: 20px;
-  box-sizing: border-box;
-  /* max-width: 1280px; do usunięcia, wpływa na cały wygląd strony */
-}
-
-.fruits-header { /*nadpisałam Ci klasę, bo wpływała na inne segmenty; zmieniłam h1 na h2, bo h1 może być wykorzystane tylko raz i już jest na samym początku*/
-  margin-bottom: 10px;
-  font-size: 36px;
-  font-weight: bold;
-}
-
-.fruits-paragraph { /*nadpisałam Ci klasę, bo wpływała na inne segmenty*/
-  margin: 0 20px 30px 20px;
-}
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  padding: 0 32px;
-  box-sizing: border-box;
-}
-
-.card {
-  background-color: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
-  flex: 1 1 calc(33.333% - 24px);
+.fruit-card {
+  width: 335px;
   height: 465px;
-  max-width: 389px;
-  box-sizing: border-box;
+  text-align: left;
+  margin: 0 20px;
+  
+
+  border-radius: 15px;
   position: relative;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card h3, /*tu chyba najlepiej użyć nazw klasy, zamiast parametrów, bo ktoś może nadpisać */
-.card p {
+.fruitcard-header {
   color: #ffffff;
+  margin: 64px 0 5px 24px;
   font-family: "DM Sans", sans-serif;
-  font-style: normal;
-  padding-left: 24px;
-  text-align: left;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 28px;
+    letter-spacing: -0.04em;
+    font-size: 1.5em;
 }
 
-.card h3 {
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  padding-top: 64px;
-  margin: 0;
+.fruit-card .plant {
+  color: #ffffff;
+  margin: 0 0 10px 24px;
+  font-size: 0.9em;
 }
 
-.card p {
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  padding-top: 7px;
-  margin: 0;
-}
 
-.card img {
-  width: 295px;
-  height: 251px;
-  margin: 24px auto;
-  display: block;
-}
 
-.price {
-  font-weight: bold;
-  background-color: #ffffff;
-  color: #b3304c;
+.fruit-card .price-tag {
+  background-color: #fff;
+  color: #AE1332;
   padding: 10px 20px;
   border-radius: 25px;
-  display: inline-block;
-  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+    letter-spacing: -0.04em;
+    font-size: 0.88em;
   position: absolute;
-  bottom: 20px;
+  bottom: 24px;
   left: 24px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 
 .strawberry {
   background-color: #f8766b;
@@ -542,19 +509,6 @@ ul {
 .peach {
   background-color: #db4f4b;
 }
-
-.plums {
-  background-color: #9b5366;
-}
-
-.orange {
-  background-color: #f47f4c;
-}
-
-.kiwi {
-  background-color: #98b37e;
-}
-
 .order-btn {
   background-color: #9dc262;
   border-radius: 100%;
@@ -565,6 +519,7 @@ ul {
   color: #ffffff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 148px;
 }
 
 .order-rotate {
@@ -1214,7 +1169,18 @@ ul {
  .card:nth-last-child(1) {
    display: none;
  }
-
+     .container {
+       max-width: 1024px;
+     }
+  
+     .card {
+       flex: 1 1 calc(50% - 24px);
+       max-width: 344px;
+     }
+  
+     .card:nth-last-child(1) {
+       display: none;
+     }
 /*FRESH BOX SECTION*/
   .contacts-heading {
     top: 5200px;
@@ -1661,14 +1627,18 @@ ul {
 }
 
 /* ORGANIC FRUIT SECTION */
- .card {
-   flex: 1 1 calc(50% - 24px);
-   max-width: 344px;
- }
-
- .card:nth-last-child(1) {
-   display: none;
- }
+     .fruits_container {
+       max-width: 1024px;
+     }
+  
+     .card {
+       flex: 1 1 calc(50% - 24px);
+       max-width: 344px;
+     }
+  
+     .card:nth-last-child(1) {
+       display: none;
+     }
 
  /* FRESH BOX SECTION */
 .section-fifth{
