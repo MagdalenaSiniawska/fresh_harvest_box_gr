@@ -1,33 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/fresh_harvest_box_gr/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!--<link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
-      rel="stylesheet" />-->
-    <title>Fresh Harvest Box</title>
-    
-    <script type="module" crossorigin src="/fresh_harvest_box_gr/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/fresh_harvest_box_gr/assets/index-10c40100.css">
-  </head>
-  <body>
-    <header class="header">
-</header>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet" />
+  <title>Fresh Harvest Box</title>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
+  <script type="module" crossorigin src="/fresh_harvest_box_gr/commonHelpers.js"></script>
+  <link rel="stylesheet" href="/fresh_harvest_box_gr/assets/index-0dacaa05.css">
+</head>
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/fresh_harvest_box_gr/assets/javascript-8dac5379.svg" alt="" />
+<body>
+  <header>
+    <div class="container div-header">
+
+      <ul class="ul-list">
+        <li class="list-item-header"><a class="link-header" href="">How It Works</a></li>
+        <li class="list-item-header"><a class="link-header" href="">Fruits</a></li>
+        <li class="list-item-header"><a class="link-header" href="">Contacts</a></li>
+      </ul>
+
+      <div class="div-logo"><a href="" class="logo">
+        <svg class="icon-logo" width="156" height="18">
+          <use href="/fresh_harvest_box_gr/assets/icons-0d756164.svg#icon-logo"></use>
+        </svg>
+      </a></div>
+      <div class="div-basket"><a href="" class="basket-link">
+        <svg class="icon-basket" width="19" height="24">
+            <use href="/fresh_harvest_box_gr/assets/icons-0d756164.svg#icon-cart"></use>
+        </svg>
+      </a></div>
+      <div class="div-hamburger">
+        <svg class="icon-hamburger" width="24" height="24">
+          <use href="/fresh_harvest_box_gr/assets/icons-0d756164.svg#icon-hamburger"></use>
+        </svg>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero">
+
+      <div class="main_hero_header_part">
+        <h1 class="header_hero">FRESH HARVEST BOX IS YOUR ONE-STOP PLACE FOR A DELICIOUS FRUIT BASKET</h1>
+        <img scrset="./img/banana.png 1x, ./img/banana@2x.png 2x" src="/fresh_harvest_box_gr/assets/banana-f8e89f77.png" class="blured_banana" alt="Picture of blured bananas" width="66" height="44">
+        <img scrset="./img/strawberry.png 1x, ./img/strawberry@2x.png 2x" src="/fresh_harvest_box_gr/assets/strawberry-2741e745.png" class="blured_strawberries" alt="Picture of blured strawberries" width="56" height="56">
+      </div>
+
+      <div class="container_border_image_hero">
+        <img srcset="/fresh_harvest_box_gr/assets/young_woman_with_orange-6a3b1870.jpg 1x, /fresh_harvest_box_gr/assets/young_woman_with_orange@2x-98b51ee3.jpg 2x" src="/fresh_harvest_box_gr/assets/young_woman_with_orange-6a3b1870.jpg" class="main_hero_picture" alt="Picture of smiling red hair young woman with slice of orange" width="311" height="484">
+      </div>
+
+      <button type="button" class="hero_shop_now_button">SHOP NOW</button>
+
+      <div class="combined_section">
+
+        <p class="paragraph_hero">Our expertly curated fruit baskets are made with the freshest, highest quality fruits available. Whether you are looking for a healthy snack or a gift for a loved one, Fresh Harvest Box has got you covered.</p>
+
+        <div class="watermelon_section">
+          <h4 class="watermelon_section_header">Fruit</h4>
+          <img srcset="/fresh_harvest_box_gr/assets/watermelon-fdbeb117.png 1x, /fresh_harvest_box_gr/assets/watermelon@2x-5ec8aeb2.png 2x" src="/fresh_harvest_box_gr/assets/watermelon-fdbeb117.png" class="watermelon_picture" alt="Picture of three watermelons and two watermelon slices" width="200" height="172">
+          <img srcset="data:image/png;base64,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 1x, /fresh_harvest_box_gr/assets/Oval@2x-00b26385.png 2x" src="data:image/png;base64,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" class="shadow_under_watermelon" alt="blured shadow under fruits" width="239" height="38">
+          <p class="watermelon_section_paragraph">Refreshing and juicy, watermelon is the perfect summer treat and a great source of hydration</p>
+        </div>
+
+        <div class="hashtags_navigation_list">
+          <ul class="navigation_list">
+            <li a class="navigation_list_details detail_1" href="">#ORGANIC</li>
+            <li a class="navigation_list_details detail_2" href="">#PRODUCTS</li>
+            <li a class="navigation_list_details detail_3" href="">#BASKET</li>
+            <li a class="navigation_list_details detail_4" href="">#FRUITS</li>
+          </ul>
+        </div>
+
+        <div class="strawberry_section">
+          <h4 class="strawberry_section_header">Fruit</h4>
+          <img srcset="/fresh_harvest_box_gr/assets/koszyk-z-truskawkami-22809d8d.png 1x, /fresh_harvest_box_gr/assets/koszyk-z-truskawkami-22809d8d.png 2x" src="/fresh_harvest_box_gr/assets/koszyk-z-truskawkami-22809d8d.png" class="strawberries_picture" alt="Picture of small white basket with strawberries" width="162" height="185">
+          <img srcset="data:image/png;base64,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 1x, /fresh_harvest_box_gr/assets/Oval@2x-00b26385.png 2x" src="data:image/png;base64,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" class="shadow_under_strawberries" alt="blured shadow under fruits" width="239" height="38">
+          <p class="strawberry_section_paragraph">Sweet and juicy, strawberries are packed with vitamin C and antioxidants, making them a delicious and healthy snack</p>
+        </div>
+
+      </div>
     </section>
 
-    <!-- Loads the specified .html file -->
-    ENOENT: no such file or directory, open '/home/runner/work/fresh_harvest_box_gr/fresh_harvest_box_gr/src/partials/vite-promo.html'
+    <section class="section-class">
+      <div class="container">
+        <div class="first-part">
 
+          <h2 class="header-title">To order your fruit basket, simply follow these easy steps</h2>
+
+          <p class="flex-paragraph">Our baskets are assembled with care and delivered straight to your doorstep, so you can enjoy the taste of fresh fruit without ever leaving your home. Whether you're looking for a healthy snack or a thoughtful gift, our fruit baskets are the perfect choice.</p>
+          
+          <ul class="list-properties list-style">
+            <li class="white-block block">
+              <h3 class="pill-1">First Step</h3>
+              <p class="paragraph-properties">Just choose the fruit you want to order by clicking on the checkboxes next to it.</p>
+            </li>
+            <li class="white-block block">
+              <h3 class="pill-1 green">Second Step</h3>
+              <p class="paragraph-properties">Click on the basket and fill out the form.</p>
+            </li>
+            <li class="white-block block">
+              <h3 class="pill-1 yellow">Third Step</h3>
+              <p class="paragraph-properties last-child">Sit back and relax! Your fresh fruit basket will be delivered.</p>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="div-gif">
+          <img class="fruits-gif"
+            src="https://s3-alpha-sig.figma.com/img/b08c/27c6/d1b10426e78244d4ff8987ecdcfb2d54?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=md~DxWXEncOr3UuZ48AeiEZVTscgIoqBe9q--d5Be6vRb7gqqeOS28NXB9BWVCTnMle86MiwZF70p9pDZwSI4PiOTnMw4mm7FyrylGYZLcJ2RgXYcDq4KtUQ-MP7zeh0QmiTVcyE16q92LZHFTfKZa22WpWVEBPDKbhKA2geh6gOU2lQvXlMXDIQm4krYDVezJr-De5hD1pRrCh84nZmmTpPJJTtiodBr6RDK6UN8V3-q1eF5uSZ3vlahvi-WjmMuCy6dN6rLDRY7gCAEqceJAJ3jQPB7rs5BQaB7QjB76naJ20RvhBoKF9t3nZNrTHa1VzAoJECpedTJenCXb01Rw__"
+            alt="fruits gif slideshow" width="335" height="476" loading="lazy" />
+        </div>
+
+      </div>
+    </section>
+
+    <section class="fruits">
+      <div class="container fruits_container">
+
+        <div class="box">
+          <h1 class="fruits-header">ORGANIC FRUITS</h1>
+          <p class="fruits-paragraph">Our organic fruits are hand-picked from local farms and delivered straight to your doorstep, ensuring that you get the freshest and most nutritious produce possible. We offer a wide selection of organic fruits grown without the use of harmful pesticides or chemicals.</p>
+        </div>
+
+        <ul class="grid">
+          <li class="card strawberry">
+            <h2>Strawberry</h2>
+            <p>Plant</p>
+            <img src="/fresh_harvest_box_gr/assets/strawberry-2741e745.png" alt="Strawberry" width="295" height="251" />
+            <div class="price">100 UAH / kg</div>
+          </li>
+          <li class="card banana">
+            <h2>Banana</h2>
+            <p>Plant</p>
+            <img src="/fresh_harvest_box_gr/assets/banana-f8e89f77.png" alt="Banana" />
+            <div class="price">80 UAH / kg</div>
+          </li>
+          <li class="card watermelon">
+            <h2>Watermelon</h2>
+            <p>Plant</p>
+            <img src="/fresh_harvest_box_gr/assets/watermelon-fdbeb117.png" alt="Watermelon" />
+            <div class="price">40 UAH / kg</div>
+          </li>
+          <li class="card lime">
+            <h2>Lime</h2>
+            <p>Plant</p>
+            <img src="/fresh_harvest_box_gr/assets/lime-61e3e4ea.png" alt="Lime" />
+            <div class="price">60 UAH / kg</div>
+          </li>
+          <li class="card apple">
+            <h2>Apple</h2>
+            <p>Plant</p>
+            <img src="/fresh_harvest_box_gr/assets/apple-e5595e36.png" alt="Apple" />
+            <div class="price">50 UAH / kg</div>
+          </li>
+          <li class="card peach">
+            <h2>Peach</h2>
+            <p>Plant</p>
+            <img src="/fresh_harvest_box_gr/assets/peach-663a247a.png" alt="Peach" />
+            <div class="price">80 UAH / kg</div>
+          </li>
+          <li class="card plums">
+            <h2>Plums</h2>
+            <p>Plant</p>
+            <img src="/fresh_harvest_box_gr/assets/plums-cbeb0309.png" alt="Plums" />
+            <div class="price">40 UAH / kg</div>
+          </li>
+          <li class="card orange">
+            <h2>Orange</h2>
+            <p>Plant</p>
+            <img src="/fresh_harvest_box_gr/assets/orange-3f727446.png" alt="Orange" />
+            <div class="price">60 UAH / kg</div>
+          </li>
+          <li class="card kiwi">
+            <h2>Kiwi</h2>
+            <p>Plant</p>
+            <img src="/fresh_harvest_box_gr/assets/kiwi-102c6de5.png" alt="Kiwi" />
+            <div class="price">90 UAH / kg</div>
+          </li>
+        </ul>
+
+        <button class="order-btn">
+          <svg class="arrow" width="14" height="14">
+            <use href="/fresh_harvest_box_gr/assets/icons-0d756164.svg#icon-order-arrow"></use>
+          </svg>
+          <span class="order-rotate">ORDER</span>
+        </button>
+
+      </div>
+    </section>
+
+    <section class="section-fifth container">
+      <h2 class="contacts-heading">Fresh Harvest Box has got you covered</h2>
+
+      <div class="flex-mel-blue">
+        <img class="img-melon" srcset="/fresh_harvest_box_gr/assets/Melon-a831483d.png x1, /fresh_harvest_box_gr/assets/Melon@2x-2f1d0c23.png x2" src="/fresh_harvest_box_gr/assets/Melon-a831483d.png" alt="melons" width="335px" height="476px"/>
+        <img class="img-blueberry" srcset="/fresh_harvest_box_gr/assets/Blueberry-262f73aa.png x1, /fresh_harvest_box_gr/assets/Blueberry@2x-4ab0b94c.png " src="/fresh_harvest_box_gr/assets/Blueberry-262f73aa.png" alt="blueberries" width="344px" height="480px" />
+      </div>
+
+      <div class="contacts-flex">
+        <p class="contacts-paragraph">Our boxes are packed with delicious, nutritious fruits and vegetables, perfect for anyone looking to eat healthier or support local farmers. Order your box today and start enjoying the best that nature has to offer!</p>
+        <div class="input-wrapper">
+          <form class="contacts-form">
+            <label class="label-contacts-email" for="contacts-email">
+              <input class="contacts-email" type="email" name="contacts-email" id="contacts-email"
+                placeholder="Enter email..." />
+            </label>
+            <button class="send-btn" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="imageandlogo">
+
+      <div class="div-footer">
+        <img srcset="/fresh_harvest_box_gr/assets/image-footer-474cb677.png 1x, /fresh_harvest_box_gr/assets/image-footer@2x-22ee369e.png 2x" src="/fresh_harvest_box_gr/assets/image-footer-474cb677.png" alt="Woman with bananas" width="335" height="172" />
+      </div>
+
+      <div class="div-logo-footer">
+        <svg class="icon-logo-footer" width="156" height="18">
+            <use href="/fresh_harvest_box_gr/assets/icons-0d756164.svg#icon-logo"></use>
+          </svg></div>
+    </div>
+
+    <div class="div-list-footer">
+      <ul class="ul-list-footer">
+        <li class="list-item-footer"><a class="link-footer" href="">How It Works</a></li>
+        <li class="list-item-footer"><a class="link-footer" href="">Fruits</a></li>
+        <li class="list-item-footer"><a class="link-footer" href="">Contacts</a></li>
+      </ul>
+    </div>
+
+    <div class="icons-footer">
+      <div><a href="" class="facebook-link">
+        <svg class="icon-footer" width="44" height="44">
+            <use href="/fresh_harvest_box_gr/assets/icons-0d756164.svg#icon-facebook"></use>
+        </svg>
+      </a></div>
+      <div><a href="" class="instagram-link">
+        <svg class="icon-footer" width="44" height="44">
+            <use href="/fresh_harvest_box_gr/assets/icons-0d756164.svg#icon-instagram"></use>
+        </svg>
+      </a></div>
+      <div><a href="" class="youtube-link">
+        <svg class="icon-footer" width="44" height="44">
+            <use href="/fresh_harvest_box_gr/assets/icons-0d756164.svg#icon-youtube"></use>
+        </svg>
+      </a></div>
+    </div>
+
+    <div class="div-address">
+        <address class="address">
+          <a href="tel:+380684439426" class="address-list">+380 (68) 443-94-26</a>
+        </address>
+        <p>1678 S. Pioneer Road</p>
+        <p>Salt Lake City</p>
+        <p>UT 84104</p>
+    </div>
+
+  </footer>
+
+  <div id="Modal" class="modal" data-window-modal>
+    <div id="modal" class="modal-btn-title">
+
+      <button type="button" id="close-btn" class="modal-close-btn" data-modal-closed><a class="close-button">
+        <svg width="20" height="20">
+            <use a href="/fresh_harvest_box_gr/assets/icons-0d756164.svg#icon-x"></use>
+          </svg></a>
+      </button>
+
+      <h2 class="your-order">YOUR ORDER</h2>
+      
+      <div class="modal-content">
+        <label>
+          <input class="modal-input" type="checkbox" name="fruits" value="strawberry">
+          <h4 class="strawberry-title">Strawberry Basket</h4>
+          <p class="p-modal">Plant</p>
+          <img class="photo-strawberry" srcset="/fresh_harvest_box_gr/assets/koszyk-z-truskawkami-22809d8d.png 1x, /fresh_harvest_box_gr/assets/koszyk-z-truskawkami-22809d8d.png 2x" src="/fresh_harvest_box_gr/assets/koszyk-z-truskawkami-22809d8d.png" alt="strawberries" width="88px" height="95px">
+        </label>
+      </div>
+
+      <div class="modal-content-dos">
+        <label>
+          <input class="modal-input-dos" type="checkbox" name="fruits" value="apples">
+          <h4 class="apple-title">Apple Basket</h4>
+          <p class="p-modal-dos">Plant</p>
+          <img class="photo-apples" srcset="./img/skrzynka.png 1x, ./img/skrzynka@2.png 2x" src="/fresh_harvest_box_gr/assets/skrzynka-8e40be2e.png" alt="apples" width="106px" height="95px">
+        </label>
+      </div>
+
+      <div class="modal-content-tres">
+        <label>
+          <input class="modal-input-tres" type="checkbox" name="fruits" value="fruits">
+          <h4 class="fruits-title">Fruits Basket</h4>
+          <p class="p-modal-tres">Plant</p>
+          <img class="photo-fruits" srcset="./img/owoce.png 1x, ./img/owoce@2.png 2x" src="/fresh_harvest_box_gr/assets/owoce-0656333d.png" alt="fruits" width="107px" height="95px">
+        </label>
+      </div>
+
+      <div class="modal-form-uno">
+        <form>
+          <label class="label-modal">
+            <input class="name" type="text" id="name" name="name" placeholder="Enter Full name.." required pattern="[A-Za-z\s]+" title="Name should only contain letters and spaces." />
+            <input class="email" type="text" id="email" name="email" placeholder="Enter email.." required title="Please enter a valid email address." />
+            <input class="card" type="text" id="card" name="card" placeholder="Enter card.." required pattern="\d{10}" title="Card should contain only numbers." />
+            <label class="comment-text">Enter comment..</label>
+            <input class="comment" type="text" id="comment" name="comment" />
+          </label>
+          <div class="btn-submit">
+            <button class="btnsubmit"><a class="submit-modal" href="#">Submit</a></button>
+
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal-TY-container is-hidden" data-modal>
+    <div class="modal-box">
+
+      <button type="button" class="close-button" data-modal-close>
+        <svg class="close-button-icon">
+          <use href="/fresh_harvest_box_gr/assets/icons-0d756164.svg#icon-x"></use>
+        </svg>
+      </button>
+
+      <div class="modal-img">
+        <picture class="raspberry-photo">
+          <source media="(max-width: 767px)" srcset="/fresh_harvest_box_gr/assets/raspberry-mobile@1x-701ca981.png 1x, /fresh_harvest_box_gr/assets/raspberry-mobile@2x-424b4532.png 2x" />
+          <source media="(min-width: 768px)" srcset="/fresh_harvest_box_gr/assets/raspberry@1x-8e011402.png 1x, /fresh_harvest_box_gr/assets/raspberry@2x-327102e9.png 2x" height="239" width="278" />
+          <img src="/fresh_harvest_box_gr/assets/raspberry-mobile@1x-701ca981.png" alt="Raspberries" height="176" width="207" />
+        </picture>
+      </div>
+
+      <h2 class="modal-header">THANK YOU</h2>
+      <p class="modal-paragraph">Thank you for your order! Our team is preparing your box with fresh, delicious fruits and vegetables, and we'll deliver it straight to your doorstep. We appreciate your business and look forward to providing you with the best possible experience!</p>
     
-  </body>
+    </div>
+  </div>
+
+  
+</body>
 </html>
