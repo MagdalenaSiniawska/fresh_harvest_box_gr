@@ -197,13 +197,14 @@ p {
 
 /* Media queries */
 
-@media (min-width:768px) and (max-width:1024px) {
+@media (min-width:420px) and (max-width:1024px) {
     .container{
         max-width: 1024px;
     }
     .card {
         flex: 1 1 calc(50% - 24px);
-        max-width: 344px;
+        max-width:344px;
+        
     }
 
     .card:nth-last-child(1) {
@@ -211,7 +212,7 @@ p {
     }
 }
 
-@media (min-width: 375px) and (max-width: 768px) {
+@media (max-width: 700px) {
     .card {
         flex: 1 1 100%;
         max-width: 335px;
