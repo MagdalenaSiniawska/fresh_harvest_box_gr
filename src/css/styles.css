@@ -320,16 +320,16 @@ a {
   background-color: #AE1332;
 }
 
-.first-part {
+/* .first-part {
   margin: 0 20px 44px 20px;
-}
+} */
 
 .header-title {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 28px;
   color: #FFFFFF;
-  line-height: 44px;
+  line-height: 28px;
   letter-spacing: -0.04em;
   text-align: center;
   text-transform: uppercase;
@@ -385,6 +385,7 @@ a {
   padding: 12px 0;
   margin-right: 14px;
   margin-left: 12px;
+  align-content: center;
 }
 
 .green {
@@ -405,14 +406,16 @@ a {
 }
 
 .div-gif {
-  margin: 0 20px;
+  /* margin: 0 20px; */
   margin-bottom: 80px;
+  padding-left: 5px;
 }
 
 .fruits-gif {
   width: 335px;
   height: 476px;
   display: flex;
+  border-radius: 20px;
 }
 
 /* Section ORGANIC FRUIT style */
