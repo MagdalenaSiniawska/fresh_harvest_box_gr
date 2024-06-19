@@ -560,101 +560,27 @@ ul {
 
 /* Sekcja FRESH BOX style */
 
-.input-wrapper {
-  position: relative;
-  display: inline-block;
-}
-
-.input-wrapper .send-btn {
-  position: absolute;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-}
-
-.contacts-flex {
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 80px; /*zmieniłam, bo 150 było za dużo */
-}
-
 .contacts-heading {
+  width: 335px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.04em;
   text-align: center;
-  width: 335px; /*popraiłam Ci tu szerokości */
   text-transform: uppercase;
   color: #fff;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-  font-family: 'DM Sans', sans-serif;
-  font-size: 64px; /*fonty masz do poprawy, bo w wersji mobilnej są mniejsze */
-  font-weight: 500;
-  line-height: 64px; /*fonty masz do poprawy, bo w wersji mobilnej są mniejsze */
-  letter-spacing: -0.04em;
+  font-family: "DM Sans", sans-serif;
   margin: 0;
   position: absolute;
-  left: 20px; /*poprawiłam Ci tu odległości, ale dalej są do zweryfikowania*/
-  top: 8020px; /*poprawiłam Ci tu odległości, ale dalej są do zweryfikowania*/
-  /* translate: -50%; */ /*tego nie powinno być odsuwa element */
+  left: 50%;
+  top: 8025px;
+  translate: -50%;
   z-index: 1;
 }
 
-.contacts-email {
-  border: 1px solid #fff;
-  border-radius: 100px;
-  opacity: 0.3;
-  background: transparent;
-  padding-left: 24px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  width: 292px;
-}
-
-.send-btn {
-  border-radius: 100px;
-  border: 2px solid #9DC162;
-  background-color: #9DC162;
-  color: #fff;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: -0.56px;
-  text-transform: capitalize;
-  padding: 15px 35px;
-}
-
-.contacts-paragraph {
+.contacts-flex {
   display: none;
-  /* color: #fff;
-  text-align: center;
-  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-  font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: -0.56px;
-  margin-top: 0;
-  margin-bottom: 0;
-  width: 492px; */ /*tych parametrów nie ma w wersji mobile first, bo nie ma tego segmentu*/
-}
-
-.contacts-email::placeholder {
-  color: #fff;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: -0.56px;
-  opacity: 0.5;
-}
-
-.img-melon {
-  object-fit: cover;
-  border-radius: 20px;
-  width: 335px; /*poprawiłam Ci wymiary i ukryłam Bluberry, ale rzuć okiem bo, obrazek nie wygląda jak w przykładzie, więc może coś z object-fit?*/
-  height: 476px;
 }
 
 .img-blueberry {
@@ -663,11 +589,11 @@ ul {
 
 .flex-mel-blue {
   display: flex;
-  gap: 24px;
+  padding-right: 0;
   justify-content: center;
   margin-bottom: 80px;
   position: relative;
-  margin-top: 89px;
+  margin-top: 53px;
 }
 
 /* Segment FOOTER style */
@@ -1254,32 +1180,87 @@ ul {
  }
 
 /*FRESH BOX SECTION*/
- .contacts-heading {
-   width: 648px;
-   font-size: 54px;
-   line-height: 54px;
-   letter-spacing: -2.16px;
- }
-
- .img-melon {
-   width: 344px;
-   height: 480px;
- }
-
- .img-blueberry {
-  display: block;
-   width: 344px;
-   height: 480px;
- }
-
- .flex-mel-blue {
-   gap: 16px;
-   margin-top: 79px;
- }
-
- .contacts-flex {
-   margin-bottom: 144px;
- }
+  .contacts-heading {
+    top: 5200px;
+    width: 648px;
+    font-size: 54px;
+    line-height: 54px;
+    letter-spacing: -0.04em;
+  }
+  .img-melon {
+    width: 344px;
+    height: 480px;
+  }
+  .img-blueberry {
+    display: block;
+  }
+  .flex-mel-blue {
+    gap: 16px;
+    margin-top: 79px;
+  }
+  .contacts-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 144px;
+  }
+  .input-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  .input-wrapper .send-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+  .contacts-email::placeholder {
+    color: #fff;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.04em;
+    opacity: 0.5;
+  }
+  .contacts-paragraph {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.04em;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 492px;
+  }
+  .send-btn {
+    border-radius: 100px;
+    border: 2px solid #9DC162;
+    background-color: #9DC162;
+    color: #fff;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.04em;
+    text-transform: capitalize;
+    padding: 15px 35px;
+  }
+  .contacts-email {
+    border: 1px solid #fff;
+    border-radius: 100px;
+    opacity: 0.3;
+    background: transparent;
+    padding-left: 24px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 292px;
+  }
 
 /* FOOTER SECTION */
 
@@ -1650,13 +1631,135 @@ ul {
  }
 
  /* FRESH BOX SECTION */
-/* ? */
+.section-fifth{
+  padding: 0;
+}
+
+.contacts-heading {
+  top: 3950px;
+  font-size: 64px;
+  width: 740px;
+  line-height: 64px;
+  letter-spacing: -0.04em;
+}
+
+.img-blueberry {
+  width: 400px;
+  height: 502px;
+  display: block;
+}
+
+.img-melon {
+  width: 792px;
+  height: 502px;
+}
+
+.flex-mel-blue {
+  margin-top: 89px;
+  gap: 24px;
+}
+
+    .contacts-flex {
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 144px;
+    }
+  
+    .input-wrapper {
+      position: relative;
+      display: inline-block;
+    }
+  
+    .input-wrapper .send-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+    }
+  
+    .contacts-email::placeholder {
+      color: #fff;
+      font-family: "DM Sans", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: -0.04em;
+      opacity: 0.5;
+    }
+  
+    .contacts-paragraph {
+      color: #fff;
+      text-align: center;
+      text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+      font-family: "DM Sans", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: -0.04em;
+      margin-top: 0;
+      margin-bottom: 0;
+      width: 492px;
+    }
+  
+    .send-btn {
+      border-radius: 100px;
+      border: 2px solid #9DC162;
+      background-color: #9DC162;
+      color: #fff;
+      font-family: "DM Sans", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: -0.04em;
+      text-transform: capitalize;
+      padding: 15px 35px;
+    }
+  
+    .contacts-email {
+      border: 1px solid #fff;
+      border-radius: 100px;
+      opacity: 0.3;
+      background: transparent;
+      padding-left: 24px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      width: 292px;
+    }
 
 /* FOOTER SECTION */
 .footer {
-  width: 1280px;
+  min-width: 1280px;
   height: 377px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.icons_address{
+  display: grid;
+}
+
+
+.ul-list-footer{
+  margin: 0;
+  padding-left: 220px;
+  padding-right: 220px;
+  fill:#AE1332;
+}
+
+.div-address,
+.icons-footer{
+  margin-left: 0;
+}
+
+.icon-footer{
+  fill: #ffffff;
+  border: 1px solid #AE1332;
+  border-radius: 10px;
+}
+
 
 /* YOUR ORDER MODAL */
 .modal-btn-title {
