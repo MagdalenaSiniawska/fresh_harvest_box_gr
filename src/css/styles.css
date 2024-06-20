@@ -365,39 +365,38 @@ header{
 
 /* STYLE ORGANIC FOOD SECTION */
 
-/* .fruit_container {
+.fruit_container {
   width: 100%;
-  max-width: 380px;
   background-color: #AE1332;
   padding-bottom: 20px;
-} */
+}
 
 .organic-fruit-header {
   text-align: center;
   padding-bottom: 14px;
   font-size: 1.5em;
-  color: #ffffff;
+  color: #FFFFFF;
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
   color: #FFFFFF;
   line-height: 28px;
   letter-spacing: -0.04em;
-  text-transform: uppercase
-  /* margin: 0 82.5px; */
+  margin-right: 82.5px;
+  margin-left: 82.5px;
 }
 
 .organic-fruit-paragraph {
   text-align: center;
   padding-bottom: 44px;
-  color: #ffffff;
+  color: #FFFFFF;
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   color: #FFFFFF;
   line-height: 18px;
   letter-spacing: -0.04em;
   font-size: 0.88em;
-  width: 334px;
-  margin: 0 20.5px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .fruit-list {
@@ -411,15 +410,18 @@ header{
   width: 335px;
   height: 465px;
   text-align: left;
-  margin: 0 20px;
-
-
+  margin-right: 20px;
+  margin-left: 20px;
   border-radius: 15px;
   position: relative;
 }
 
-.fruitcard-header {
-  color: #ffffff;
+.fruit-card:nth-child(n+7) {
+  display: none;
+}
+
+.fruit-card-header {
+  color: #FFFFFF;
   margin: 64px 0 5px 24px;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
@@ -429,16 +431,16 @@ header{
   font-size: 1.5em;
 }
 
-.fruit-card .plant {
-  color: #ffffff;
+.plant {
+  color: #FFFFFF;
   margin: 0 0 10px 24px;
   font-size: 0.9em;
 }
 
-.fruit-card .price-tag {
+.price-tag {
   background-color: #fff;
   color: #AE1332;
-  padding: 10px 20px;
+  padding: 12px 24px;
   border-radius: 25px;
   font-weight: 500;
   line-height: 18px;
@@ -451,39 +453,51 @@ header{
 }
 
 .strawberry {
-  background-color: #f8766b;
+  background-color: #F8766B;
 }
 
 .banana {
-  background-color: #edd251;
+  background-color: #EDD251;
 }
 
 .watermelon {
-  background-color: #9dc262;
+  background-color: #9DC262;
 }
 
 .lime {
-  background-color: #bfd663;
+  background-color: #BFD663;
 }
 
 .apple {
-  background-color: #e93f29;
+  background-color: #E93F29;
 }
 
 .peach {
-  background-color: #db4f4b;
+  background-color: #DB4F4B;
+}
+
+.plums {
+  background-color: #9B5366;
+}
+
+.orange {
+  background-color: #F47F4C;
+}
+
+.kiwi {
+  background-color: #98B37E;
 }
 
 .order-btn {
-  background-color: #9dc262;
+  background-color: #9DC262;
   border-radius: 100%;
-  height: 80px;
-  width: 80px;
+  height: 114px;
+  width: 114px;
   border: none;
-  margin-top: 44px;
-  color: #ffffff;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  margin-top: 32px;
+  color: #FFFFFF;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 148px;
 }
 
@@ -491,11 +505,11 @@ header{
   display: inline-block;
   transform: rotate(-14deg);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .arrow {
-  fill: #ffffff;
+  fill: #FFFFFF;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   top: 10px;
@@ -503,13 +517,12 @@ header{
 
 .order-btn:hover {
   background-color: #fff;
-  color: #9dc262;
+  color: #9DC262;
 }
 
 .order-btn:hover .arrow {
-  fill: #9dc262;
+  fill: #9DC262;
 }
-
 /* STYLE FRESH BOX SEKCJA */
 
 .contacts-flex {
@@ -659,6 +672,306 @@ header{
 }
 
 /* STYLE MODAL -YOUR ORDER SECTION */
+.modal-content {
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: 767px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 335px;
+  max-height: 907px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background: #ffff;
+  border-radius: 20px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-top: 69px;
+  padding-bottom: 30px;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 28px;
+  right: 24px;
+  background-color: #ffff;
+  border: none;
+  cursor: pointer;
+  fill: #AE1332;
+}
+
+.your-order {
+  position: absolute;
+  top: 23px;
+  bottom: 20px;
+  left: 20px;
+  color: #AE1332;
+  font-family: 'DM Sans' sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -4%;
+}
+
+.comment-text {
+  position: absolute;
+  top: 77%;
+  left: 9%;
+  font-size: 14px;
+  font-family: 'DM Sans' sans-serif;
+  font-weight: 400;
+  color: #000000;
+  opacity: 50%;
+}
+
+.modal-content {
+  display: flex;
+  background-color: #F8766B;
+  width: 295px;
+  height: 119px;
+  border-radius: 20px;
+  margin-top: 2%;
+  margin-left: 20px;
+  gap: 12px;
+}
+
+.modal-input {
+  position: relative;
+  left: 173%;
+  top: 9%;
+  border: 1.5px solid #fff;
+  border-radius: 4px;
+  width: 16px;
+  height: 16px;
+}
+
+.strawberry-title {
+  font-family: 'DM Sans' sans-serif;
+  position: relative;
+  bottom: -1%;
+  left: 13%;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: -4%;
+  color: #ffff;
+  margin-bottom: 5px;
+}
+
+.p-modal {
+  font-family: 'DM Sans' sans-serif;
+  position: relative;
+  bottom: 1%;
+  left: 13%;
+  color: #ffff;
+}
+
+.photo-strawberry {
+  position: relative;
+  left: 112%;
+  bottom: 40%;
+}
+
+.modal-content-dos {
+  display: flex;
+  background-color: #EDD251;
+  margin-top: 12px;
+  width: 295px;
+  height: 119px;
+  border-radius: 20px;
+  margin-left: 20px;
+  gap: 12px;
+}
+
+.modal-input-dos {
+  position: relative;
+  left: 240%;
+  top: 9%;
+  border: 1.5px solid #fff;
+  border-radius: 4px;
+  width: 16px;
+  height: 16px;
+}
+
+.apple-title {
+  font-family: 'DM Sans' sans-serif;
+  position: relative;
+  bottom: -1%;
+  left: 13%;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: -4%;
+  color: #ffff;
+  margin-bottom: 5px;
+}
+
+.p-modal-dos {
+  font-family: 'DM Sans' sans-serif;
+  position: relative;
+  bottom: 0.6%;
+  left: 13%;
+  color: #ffff;
+}
+
+.photo-apples {
+  position: relative;
+  left: 145%;
+  bottom: 40%;
+}
+
+.modal-content-tres {
+  display: flex;
+  background-color: #9DC262;
+  margin-top: 12px;
+  width: 295px;
+  height: 119px;
+  border-radius: 20px;
+  margin-left: 20px;
+  gap: 12px;
+}
+
+.modal-input-tres {
+  position: relative;
+  left: 244%;
+  top: 9%;
+  border: 1.5px solid #fff;
+  border-radius: 4px;
+  width: 16px;
+  height: 16px;
+}
+
+.fruits-title {
+  font-family: 'DM Sans' sans-serif;
+  position: relative;
+  bottom: -1%;
+  left: 13%;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: -4%;
+  color: #ffff;
+  margin-bottom: 5px;
+}
+
+.p-modal-tres {
+  font-family: 'DM Sans' sans-serif;
+  position: relative;
+  bottom: 0.7%;
+  left: 13%;
+  color: #ffff;
+}
+
+.photo-fruits {
+  position: relative;
+  left: 150%;
+  bottom: 40%;
+}
+
+.label-modal {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: 20px;
+  gap: 14px;
+}
+
+.name {
+  width: 277px;
+  height: 43px;
+  border-radius: 100px;
+  border: 1px solid grey;
+  margin-right: 50px;
+  padding-left: 20px;
+}
+
+.email {
+  width: 277px;
+  height: 43px;
+  border-radius: 100px;
+  border: 1px solid grey;
+  padding-left: 20px;
+}
+
+.card-modal {
+  width: 277px;
+  height: 43px;
+  border-radius: 100px;
+  border: 1px solid grey;
+  padding-left: 20px;
+}
+
+.comment {
+  width: 277px;
+  height: 43px;
+  border-radius: 20px;
+  height: calc(1.5em * 7);
+  border: 1px solid grey;
+  padding-left: 20px;
+  padding-bottom: 120px;
+}
+
+.btnsubmit {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.04em;
+  text-transform: capitalize;
+  color: #fff;
+  border-radius: 100px;
+  width: 92px;
+  height: 42px;
+  background: #9DC162;
+  margin-left: 20px;
+  margin-top: 20px;
+  border: none;
+}
+
+.submit-modal {
+  font-family: 'DM Sans' sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  margin-bottom: 5%;
+  text-decoration: none;
+  color: #ffff;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: -4%;
+}
+
+.women-with-banana {
+  display: none;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 
 /* STYLE MODAL - THANK YOU SECTION */
 .modal-TY-container {
@@ -727,6 +1040,7 @@ header{
   padding: 0;
   cursor: pointer;
   background: none;
+  border: none
 }
 
 .close-button-icon {
@@ -988,27 +1302,72 @@ header{
 
 /* STYLE ORGANIC FRUIT SECTION */
 
-.organic-fruit-header{
-  font-size: 40px;
-  line-height: 44px;
+.fruit-images {
+  padding-left: 25px;
+}
+
+.organic-fruit-header {
+  text-align: center;
+  padding-bottom: 14px;
+  font-size: 2.5em;
+  color: #FFFFFF;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
+  color: #FFFFFF;
+  line-height: 44px;
+  letter-spacing: -0.04em;
+  margin-left: 75px;
+  margin-right: 75px;
 }
 
 .organic-fruit-paragraph {
   text-align: center;
   padding-bottom: 44px;
-  font-size: 14px;
-  width: 547px;
-  margin: 14px 110.5px 44px 110.5px;
+  color: #FFFFFF;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+  font-size: 0.88em;
+  margin-right: 110.5px;
+  margin-left: 110.5px;
 }
 
-.card {
-  flex: 1 1 calc(50% - 24px);
-  max-width: 344px;
+.fruit-list {
+  display: inline-block;
 }
 
-.card:nth-last-child(1) {
+.fruit-card {
+  display: inline-block;
+  margin: 0 16px 16px 0;
+}
+
+.fruit-card:nth-child(n+7) {
+  display: inline-block;
+}
+
+.fruit-card:last-child {
   display: none;
+}
+
+.fruits {
+  margin-left: 32.5px;
+  margin-right: 32.5px;
+}
+
+/* .fruit-card:nth-child(odd) {
+  margin-left: 32px;
+} */
+.order-btn {
+  margin-top: 44px;
+  margin-left: 327px;
+}
+
+.price-tag {
+  padding: 12px 21px;
+  line-height: 24px;
+  font-size: 1.13em;
 }
 
 /* STYLE FRESH BOX SECTION */
@@ -1147,6 +1506,211 @@ header{
 }
 
 /* STYLE MODAL YOUR ORDER SECTION */
+
+.modal-btn-title {
+  width: 891px;
+  height: 880px;
+  padding-bottom: 100px;
+  background-position: 100% 100%;
+}
+
+.modal-content {
+  width: 257px;
+  height: 308px;
+  top: -4%;
+  margin-left: 40px;
+}
+
+.comment-text {
+  top: 74%;
+}
+
+.your-order {
+  margin-top: 20px;
+}
+
+.close-button {
+  color: #AE1332;
+}
+
+.strawberry-title {
+  font-size: 24px;
+  margin-left: -5px;
+}
+
+.p-modal {
+  font-size: 14px;
+  top: 10%;
+  margin-left: -5px;
+}
+
+.photo-strawberry {
+  width: 173px;
+  height: 196px;
+}
+
+.modal-content-dos {
+  position: relative;
+  width: 257px;
+  height: 308px;
+  top: -3%;
+  left: 0.5%;
+  margin-left: 317px;
+}
+
+.apple-title {
+  font-size: 24px;
+  margin-left: -5px;
+}
+
+.p-modal-dos {
+  font-size: 14px;
+  top: 10%;
+  margin-left: -5px;
+}
+
+.photo-apples {
+  width: 229px;
+  height: 196px;
+}
+
+.modal-content-tres {
+  position: relative;
+  width: 257px;
+  height: 308px;
+  top: -2%;
+  left: 1%;
+  margin-left: 594px;
+}
+
+.fruits-title {
+  font-size: 24px;
+  margin-left: -5px;
+}
+
+.p-modal-tres {
+  font-size: 14px;
+  margin-left: -5px;
+}
+
+.photo-fruits {
+  width: 229px;
+  height: 196px;
+}
+
+.label-modal {
+  margin-left: 45px;
+  width: 420px;
+}
+
+.name:placeholder-shown {
+  padding-left: 20px;
+}
+
+.card-modal:placeholder-shown {
+  padding-left: 20px;
+}
+
+.email:placeholder-shown {
+  padding-left: 20px;
+}
+
+.comment:placeholder-shown {
+  padding-left: 20px;
+}
+
+.btnsubmit {
+  margin-left: 46px;
+  margin-top: 21px;
+}
+
+.modal-btn-title {
+  width: 891px;
+  height: 880px;
+  padding-bottom: 100px;
+  background-position: 100% 100%;
+}
+
+.container {
+  min-width: 1280px;
+}
+
+.modal-content {
+  width: 257px;
+  height: 308px;
+  top: -4%;
+}
+
+.comment-text {
+  top: 74%;
+}
+
+.your-order {
+  font-size: 40px;
+  top: 2%;
+}
+
+.close-button {
+  color: #AE1332;
+}
+
+.strawberry-title {
+  font-size: 24px;
+}
+
+.p-modal {
+  font-size: 14px;
+  top: 10%;
+}
+
+.photo-strawberry {
+  width: 173px;
+  height: 196px;
+}
+
+.modal-content-dos {
+  position: relative;
+  width: 257px;
+  height: 308px;
+  top: -3%;
+  left: 0.5%;
+}
+
+.p-modal-dos {
+  font-size: 14px;
+  top: 10%;
+}
+
+.photo-apples {
+  width: 229px;
+  height: 196px;
+}
+
+.modal-content-tres {
+  position: relative;
+  width: 257px;
+  height: 308px;
+  top: -2%;
+  left: 1%;
+}
+
+.p-modal-tres {
+  font-size: 14px;
+}
+
+.photo-fruits {
+  width: 229px;
+  height: 196px;
+}
+
+.label-modal {
+  margin-left: 45px;
+  width: 420px;
+}
+
+.modal-input {
+  margin-left: 5px;
+}
 
 /* STYLE MODAL THANK YOU SECTION */
 .modal-box {
@@ -1325,35 +1889,83 @@ header{
 
 /* STYLE ORGANIC FRUIT SECTION */
 
+.fruit-images {
+  padding-left: 47.5px;
+}
+
 .organic-fruit-header {
-  font-size: 40px;
-  line-height: 44px;
+  text-align: center;
+  padding-bottom: 14px;
+  font-size: 2.5em;
+  color: #FFFFFF;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
+  color: #FFFFFF;
+  line-height: 44px;
+  letter-spacing: -0.04em;
+  margin-left: 296px;
+  margin-right: 328px;
 }
 
 .organic-fruit-paragraph {
   text-align: center;
   padding-bottom: 44px;
-  font-size: 14px;
-  width: 547px;
-  margin: 14px 366.5px 44px 366.5px;
+  color: #FFFFFF;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+  font-size: 0.88em;
+  margin-right: 328px;
+  margin-left: 328px;
 }
 
-.fruits_container {
-  max-width: 1024px;
-  }
-  
-.card {
-  flex: 1 1 calc(50% - 24px);
-  max-width: 344px;
-     }
-  
-.card:nth-last-child(1) {
-  display: none;
-     }
+.fruit-card-header {
+  margin: 64px 0 0 24px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: -0.04em;
+  font-size: 2em;
+}
+
+.plant {
+  color: #FFFFFF;
+  margin: 7px 0 0px 24px;
+  font-size: 1.13em;
+}
+
+.fruit-list {
+  display: inline-block;
+}
+
+.fruit-card {
+  display: inline-block;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+.fruit-card:nth-child(3n+1) {
+  margin-left: 104.5px;
+}
+
+.fruit-card:nth-child(n+7) {
+  display: inline-block;
+}
+
+.order-btn {
+  margin-top: 44px;
+  margin-left: 583px;
+}
+
+.price-tag {
+  padding: 12px 17.5px;
+  line-height: 24px;
+  font-size: 1.13em;
+}
 
 /* STYLE FRESH BOX SECTION */
-
    .img-melon {
      /* width: 792px;
     height: 502px;
@@ -1491,5 +2103,164 @@ header{
 }
 
 /* STYLE MODAL YOUR ORDER SECTION */
+.modal-btn-title {
+  width: 704px;
+  max-height: 1000px;
+  background-image: url(../img/kobieta-banany.png);
+  background-repeat: no-repeat;
+  background-position: 175% 100%;
+}
 
+.modal-close-btn {
+  top: 20px;
+}
+
+.your-order {
+  top: 50px;
+  left: 40px;
+  font-size: 40px;
+}
+
+.modal-content {
+  margin-top: 7%;
+  width: 200px;
+  height: 250px;
+  margin-right: 40px;
+  margin-left: 35px;
+}
+
+.strawberry-title {
+  left: 13%;
+  top: 8%;
+  font-size: 18px;
+}
+
+.p-modal {
+  top: 8%;
+}
+
+.modal-input {
+  left: 108%;
+  top: 6%;
+  width: 20px;
+  height: 20px;
+}
+
+.photo-strawberry {
+  top: 11%;
+  left: 20%;
+  width: 133px;
+  height: 148px;
+}
+
+.modal-content-dos {
+  margin-left: 35%;
+  margin-top: -35.3%;
+  width: 200px;
+  height: 250px;
+}
+
+.comment-text {
+  top: 73%;
+  left: 7.4%;
+}
+
+.apple-title {
+  left: 13%;
+  top: 8%;
+  font-size: 18px;
+}
+
+.p-modal-dos {
+  top: 8%;
+}
+
+.modal-input-dos {
+  left: 96%;
+  top: 6%;
+  width: 20px;
+  height: 20px;
+}
+
+.photo-apples {
+  top: 9%;
+  left: 7%;
+  width: 172px;
+  height: 148px;
+}
+
+.modal-content-tres {
+  margin-left: 65%;
+  margin-top: -35.3%;
+  width: 200px;
+  height: 250px;
+}
+
+.modal-input-tres {
+  left: 97%;
+  top: 6%;
+  width: 20px;
+  height: 20px;
+}
+
+.photo-fruits {
+  top: 11%;
+  left: 20px;
+  width: 172px;
+  height: 148px;
+}
+
+.p-modal-tres {
+  top: 8%;
+}
+
+.fruits-title {
+  left: 13%;
+  top: 8%;
+  font-size: 18px;
+}
+
+.label-modal {
+  margin-left: 35px;
+  margin-top: 2%;
+  width: 230px;
+}
+
+.name {
+  width: 360px;
+}
+
+.name:placeholder-shown {
+  padding-left: 20px;
+}
+
+.card-modal {
+  width: 360px;
+}
+
+.card-modal:placeholder-shown {
+  padding-left: 20px;
+}
+
+.email {
+  width: 360px;
+}
+
+.email:placeholder-shown {
+  padding-left: 20px;
+}
+
+.comment {
+  width: 360px;
+}
+
+.comment:placeholder-shown {
+  padding-left: 20px;
+}
+
+.btnsubmit {
+  margin-top: 20px;
+  margin-left: 33px;
+  width: 114px;
+}
 }
