@@ -525,8 +525,13 @@ header{
   padding-bottom: 80px;
 }
 
-.section-fifth{
+.img-melon-desktop {
+  display: none;
+}
+
+.section-fifth {
   position: relative;
+  margin: 0 auto;
 }
 
 .contacts-heading {
@@ -1013,12 +1018,17 @@ header{
   font-size: 54px;
   line-height: 54px;
   letter-spacing: -0.04em;
+  margin: 50px 60px 0 60px;
 }
 
 .img-melon {
   width: 344px;
   height: 480px;
   padding-bottom: 0;
+}
+
+.img-melon-desktop {
+  display: none;
 }
 
 .img-blueberry {
@@ -1344,99 +1354,109 @@ header{
 
 /* STYLE FRESH BOX SECTION */
 
-.img-melon {
-  width: 792px;
-  height: 502px;
-  padding-bottom: 0;
-  margin: 0;
-}
+   .img-melon {
+     /* width: 792px;
+    height: 502px;
+    padding-bottom: 0;
+    margin: 0; */
+     display: none;
+   }
 
-.img-blueberry {
-  display: inline-flex;
-  width: 400px;
-  height: 502px;
-}
+   .img-blueberry {
+     /* display: inline-flex; */
+     width: 400px;
+     height: 502px;
+   }
 
-.flex-mel-blue{
-  margin: 133px 20px 0 20px;
-}
+   .img-melon-desktop {
+     display: block;
+   }
 
-.contacts-flex {
-      display: flex;
-      flex-direction: column;
-      gap: 80px;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 144px;
-    }
-  
-    .input-wrapper {
-      position: relative;
-      display: inline-block;
-    }
-  
-    .input-wrapper .send-btn {
-      position: absolute;
-      top: 0;
-      right: 0;
-      cursor: pointer;
-    }
-  
-    .contacts-email::placeholder {
-      color: #fff;
-      font-family: "DM Sans", sans-serif;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 18px;
-      letter-spacing: -0.04em;
-      opacity: 0.5;
-    }
-  
-    .contacts-paragraph {
-      color: #fff;
-      text-align: center;
-      text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-      font-family: "DM Sans", sans-serif;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 18px;
-      letter-spacing: -0.04em;
-      margin-top: 80px;
-      margin-bottom: 0;
-      width: 492px;
-    }
-  
-    .send-btn {
-      border-radius: 100px;
-      border: 2px solid #9DC162;
-      background-color: #9DC162;
-      color: #fff;
-      font-family: "DM Sans", sans-serif;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 18px;
-      letter-spacing: -0.04em;
-      text-transform: capitalize;
-      padding: 15px 35px;
-    }
-  
-    .contacts-email {
-      border: 1px solid #fff;
-      border-radius: 100px;
-      opacity: 0.3;
-      background: transparent;
-      padding-left: 24px;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      width: 292px;
-    }
+   .flex-mel-blue {
+     margin: 133px 20px 0 20px;
+     display: flex;
+     gap: 24px;
+     justify-content: center;
+   }
 
-    .contacts-heading {
-  width: 740px;
-  font-size: 64px;
-  line-height: 64px;
-  margin: 0 270px 0 270px;
-}
+   .contacts-flex {
+     display: flex;
+     flex-direction: column;
+     gap: 80px;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 144px;
+   }
+
+   .input-wrapper {
+     position: relative;
+     display: inline-block;
+   }
+
+   .input-wrapper .send-btn {
+     position: absolute;
+     top: 0;
+     right: 0;
+     cursor: pointer;
+   }
+
+   .contacts-email::placeholder {
+     color: #fff;
+     font-family: 'DM Sans', sans-serif;
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 18px;
+     letter-spacing: -0.04em;
+     opacity: 0.5;
+   }
+
+   .contacts-paragraph {
+     color: #fff;
+     text-align: center;
+     text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+     font-family: 'DM Sans', sans-serif;
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 18px;
+     letter-spacing: -0.04em;
+     margin-top: 80px;
+     margin-bottom: 0;
+     width: 492px;
+   }
+
+   .send-btn {
+     border-radius: 100px;
+     border: 2px solid #9DC162;
+     background-color: #9DC162;
+     color: #fff;
+     font-family: 'DM Sans', sans-serif;
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 18px;
+     letter-spacing: -0.04em;
+     text-transform: capitalize;
+     padding: 15px 35px;
+   }
+
+   .contacts-email {
+     border: 1px solid #fff;
+     border-radius: 100px;
+     opacity: 0.3;
+     background: transparent;
+     padding-left: 24px;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     width: 292px;
+   }
+
+   .contacts-heading {
+     width: 740px;
+     font-size: 64px;
+     line-height: 64px;
+     margin: -100px 270px 0 270px;
+     /*
+    margin: 0 270px 0 270px; */
+   }
 
 /* STYLE FOOTER SECTION */
 .footer {
